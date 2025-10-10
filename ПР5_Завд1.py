@@ -57,7 +57,6 @@ def show_sorted(data):
             population, area = data[country]
             print(f"{country}: населення {population} млн, площа {area} тис.км²")
 
-
 def population_density(item):
     country, data = item
     population = data[0]
