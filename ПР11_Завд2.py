@@ -17,12 +17,12 @@ numeric_cols = df.select_dtypes("number")
 total_year_all = numeric_cols.sum().sum()
 
 print("\nЗагальна кількість велосипедистів за рік на всіх велодоріжках:")
-print(total_year_all)
+print(int(total_year_all))
 
 total_by_lane = numeric_cols.sum()
 
 print("\nЗагальна кількість велосипедистів за рік на кожній велодоріжці:")
-print(total_by_lane)
+print(total_by_lane.astype(int))
 
 df["Date"] = pd.to_datetime(df["Date"], dayfirst=True)
 
