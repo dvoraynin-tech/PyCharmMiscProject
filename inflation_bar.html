@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.8.1.min.js"></script>
+<script type="text/javascript">
+Bokeh.set_log_level("info");
+</script>
+  </head>
+  <body>
+    <div id="ddca1bfb-c618-404e-a55b-d8ba782c462c" data-root-id="p1090" style="display: contents;"></div>
+  
+    <script type="application/json" id="dfb80b17-a7fe-43e4-952d-e0e07499fbaa">
+      {"4f1083fd-fd6e-4e48-8637-6029b1f9f89c":{"version":"3.8.1","title":"Bokeh Application","config":{"type":"object","name":"DocumentConfig","id":"p1129","attributes":{"notifications":{"type":"object","name":"Notifications","id":"p1130"}}},"roots":[{"type":"object","name":"Figure","id":"p1090","attributes":{"height":400,"sizing_mode":"stretch_width","x_range":{"type":"object","name":"FactorRange","id":"p1100","attributes":{"factors":["2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p1092"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1101"},"y_scale":{"type":"object","name":"LinearScale","id":"p1102"},"title":{"type":"object","name":"Title","id":"p1093","attributes":{"text":"Inflation (%) \u2014 Moldova"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1123","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1087","attributes":{"selected":{"type":"object","name":"Selection","id":"p1088","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1089"},"data":{"type":"map","entries":[["year",["2014","2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"]],["val",[0,5.08878554625884,9.67624033101852,6.3593089803794,6.57022997455602,3.04505397337069,4.83778351428724,3.76597122245358,5.10641129002836,28.7372976766236,13.4170104381299]]]}}},"view":{"type":"object","name":"CDSView","id":"p1124","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1125"}}},"glyph":{"type":"object","name":"VBar","id":"p1120","attributes":{"x":{"type":"field","field":"year"},"width":{"type":"value","value":0.6},"top":{"type":"field","field":"val"},"line_color":{"type":"value","value":"green"},"fill_color":{"type":"value","value":"green"},"hatch_color":{"type":"value","value":"green"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1121","attributes":{"x":{"type":"field","field":"year"},"width":{"type":"value","value":0.6},"top":{"type":"field","field":"val"},"line_color":{"type":"value","value":"green"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"green"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"green"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1122","attributes":{"x":{"type":"field","field":"year"},"width":{"type":"value","value":0.6},"top":{"type":"field","field":"val"},"line_color":{"type":"value","value":"green"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"green"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"green"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1099","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1113"},{"type":"object","name":"WheelZoomTool","id":"p1114","attributes":{"renderers":"auto"}},{"type":"object","name":"ResetTool","id":"p1115"},{"type":"object","name":"SaveTool","id":"p1116"},{"type":"object","name":"HoverTool","id":"p1128","attributes":{"renderers":"auto","tooltips":[["Year","@year"],["Inflation","@val"]],"sort_by":null}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1108","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1109","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1110"},"axis_label":"Inflation (%)","major_label_policy":{"type":"object","name":"AllLabels","id":"p1111"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1103","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1104"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1105"},"axis_label":"Year","major_label_orientation":0.7853981633974483,"major_label_policy":{"type":"object","name":"AllLabels","id":"p1106"}}}],"center":[{"type":"object","name":"Grid","id":"p1107","attributes":{"axis":{"id":"p1103"},"grid_line_dash":[6,4]}},{"type":"object","name":"Grid","id":"p1112","attributes":{"dimension":1,"axis":{"id":"p1108"},"grid_line_dash":[6,4]}},{"type":"object","name":"Legend","id":"p1126","attributes":{"items":[{"type":"object","name":"LegendItem","id":"p1127","attributes":{"label":{"type":"value","value":"Moldova"},"renderers":[{"id":"p1123"}]}}]}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('dfb80b17-a7fe-43e4-952d-e0e07499fbaa').textContent;
+              const render_items = [{"docid":"4f1083fd-fd6e-4e48-8637-6029b1f9f89c","roots":{"p1090":"ddca1bfb-c618-404e-a55b-d8ba782c462c"},"root_ids":["p1090"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
